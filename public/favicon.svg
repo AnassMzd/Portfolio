@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#0A0E27" rx="15"/>
+  
+  <!-- Glow effect -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Shield icon -->
+  <g filter="url(#glow)">
+    <path d="M50 15 L30 25 L30 45 Q30 65 50 85 Q70 65 70 45 L70 25 Z" 
+          fill="none" 
+          stroke="#00FF41" 
+          stroke-width="3"/>
+    
+    <!-- Inner shield detail -->
+    <path d="M50 25 L38 32 L38 48 Q38 60 50 72 Q62 60 62 48 L62 32 Z" 
+          fill="#00FF41" 
+          opacity="0.2"/>
+    
+    <!-- Lock symbol -->
+    <rect x="45" y="45" width="10" height="12" 
+          fill="#00FF41" 
+          rx="1"/>
+    <path d="M47 45 L47 40 Q47 37 50 37 Q53 37 53 40 L53 45" 
+          fill="none" 
+          stroke="#00FF41" 
+          stroke-width="2"/>
+  </g>
+  
+  <!-- Initials -->
+  <text x="50" y="95" 
+        font-family="Arial, sans-serif" 
+        font-size="14" 
+        font-weight="bold" 
+        fill="#00FF41" 
+        text-anchor="middle">AEM</text>
+</svg>
