@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyber-blue rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
       </div>
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -28,45 +28,6 @@ const Footer = () => {
               <Terminal size={16} />
               <span className="font-mono">$ whoami: cybersecurity_engineer</span>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#home" className="text-gray-300 hover:text-cyber-green transition-colors flex items-center space-x-2">
-                  <span className="text-cyber-green">▹</span>
-                  <span>
-                    Home
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-gray-300 hover:text-cyber-green transition-colors flex items-center space-x-2">
-                  <span className="text-cyber-green">▹</span>
-                  <span>
-                    About
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="text-gray-300 hover:text-cyber-green transition-colors flex items-center space-x-2">
-                  <span className="text-cyber-green">▹</span>
-                  <span>
-                    Projects
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-300 hover:text-cyber-green transition-colors flex items-center space-x-2">
-                  <span className="text-cyber-green">▹</span>
-                  <span>
-                    Contact
-                  </span>
-                </a>
-              </li>
-            </ul>
           </div>
 
           {/* Social Links */}
