@@ -15,8 +15,8 @@ const CVDownload = () => {
       
       // Create download link
       const link = document.createElement('a')
-      link.href = '/assets/cv/Anass_El_Mazdougui_CV.pdf'
-      link.download = 'Anass_El_Mazdougui_CV.pdf'
+      link.href = '/assets/cv/CV_Anass_El_Mazdougui.pdf'
+      link.download = 'CV_Anass_El_Mazdougui.pdf'
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
